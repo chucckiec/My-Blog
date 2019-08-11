@@ -40,8 +40,8 @@
                                  th:alt="${commons.site_title()}"/>
                         </a>
                         <br/>
-                        <p>&copy; 版权所有 <a href="https://github.com/ZHENFENG13/My-Blog" target="_blank"
-                                          rel="nofollow">My Blog</a> 保留一切权利
+                        <p>&copy; 版权所�? <a href="https://github.com/ZHENFENG13/My-Blog" target="_blank"
+                                          rel="nofollow">My Blog</a> 保留一切权�?
                         </p>
                         <br/>
                         <th:block th:if="${option}!=null and ${option.getValue()}!=''">
@@ -158,7 +158,7 @@
 <script th:src="@{//cdn.bootcss.com/instantclick/3.0.1/instantclick.min.js}"></script>
 <script th:inline="javascript">
     /*<![CDATA[*/
-    var isOk = [[${is_post}]];
+    var isOk = [[$(is_post)]];
     if (isOk) {
         var postDirectory = new Headroom(document.getElementById("directory-content"), {
             tolerance: 0,
@@ -183,7 +183,7 @@
     });
     header.init();
     $('#search-inp').keypress(function (e) {
-        var key = e.which; //e.which是按键的值
+        var key = e.which; //e.which是按键的�?
         if (key == 13) {
             var q = $(this).val();
             if (q && q != '') {
